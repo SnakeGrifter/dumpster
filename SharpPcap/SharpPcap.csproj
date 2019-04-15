@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <Version>4.6.1</Version>
+    <Description>A packet capture framework for .NET</Description>
+    <Authors>Tamir Gal, Chris Morgan and others</Authors>
+    <PackageProjectUrl>https://github.com/chmorgan/sharppcap</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/chmorgan/sharppcap</RepositoryUrl>
+    <Copyright>Tamir Gal, Chris Morgan and others</Copyright>
+    <PackageLicenseUrl>https://github.com/chmorgan/sharppcap/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="2.0.1" />
+    <PackageReference Include="PacketDotNet" Version="0.20.1" />
+  </ItemGroup>
+
+</Project>
